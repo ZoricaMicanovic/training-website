@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.navbar {
+  overflow: hidden;
+  background-color: #78eac1;
+  font-family: Source, Sans Pros, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #78eac1;
+  font-family: Source, Sans Pros, sans-serif;
+  text-align: center; /* Add this line to center the links */
+}
+
+.navbar a {
+  display: inline-block; /* Change this line to display the links as inline blocks */
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: violet;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #78eac1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: teal;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #fff;
+}
+
+.show {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">Mugs</a>
+  <a href="#news">Magnets</a>
+  <a href="#news">Socks</a>
+  <a href="#news">T-shirts</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">My Account
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="#">Login</a>
+    <a href="#">Register</a>
+    <a href="#">Wishlist</a>
+  </div>
+  </div> 
+</div>
+
+<h2>Get the most interesting merch from our store!</h2>
+<p>Test IO now offers you to shop for branded mugs, magnets, socks, T-shirts and many more.</p>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+</body>
+</html>
