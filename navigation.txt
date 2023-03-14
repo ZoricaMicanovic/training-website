@@ -83,6 +83,12 @@
   <a href="#news">Magnets</a>
   <a href="#news">Socks</a>
   <a href="#news">T-shirts</a>
+  <a href="news">Face Masks</a>
+  <a href="news">Zipper Pouches</a>
+  <a href="news">Pins</a>
+  <a href="news">Stickers</a>
+  <a href="news">Bags</a>
+  <a href="news">Notebooks</a>
   <div class="dropdown">
   <button class="dropbtn" onclick="myFunction()">My Account
     <i class="fa fa-caret-down"></i>
