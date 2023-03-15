@@ -4,15 +4,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+
 .navbar {
   overflow: hidden;
-  background-color: #78eac1;
+  background-color: #000;
   font-family: Source, Sans Pros, sans-serif;
 }
 
 .navbar {
   overflow: hidden;
-  background-color: #78eac1;
+  background-color: #222222;
   font-family: Source, Sans Pros, sans-serif;
   text-align: center; /* Add this line to center the links */
 }
@@ -45,13 +46,13 @@
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-  background-color: violet;
+  background-color: teal;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #78eac1;
+  background-color: #000;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -59,7 +60,7 @@
 
 .dropdown-content a {
   float: none;
-  color: teal;
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -67,7 +68,7 @@
 }
 
 .dropdown-content a:hover {
-  background-color: #fff;
+  background-color: #78eac1;
 }
 
 .show {
@@ -78,6 +79,10 @@
 <body>
 
 <div class="navbar">
+<a href="http://www.w3.org/html/logo/">
+<img src="https://test.io/content/dam/test-io/test_io_logo1.svg" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
+</a>
+
   <a href="#home">Home</a>
   <a href="#news">Mugs</a>
   <a href="#news">Magnets</a>
